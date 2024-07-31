@@ -1,6 +1,6 @@
 # Digital Domi
 
-Digital Domi, a technology company that is developing a platform for managing mail and communication.
+**Digital Domi** is a technology platform designed for managing mail and communication.
 
 ## Requirements
 
@@ -13,43 +13,40 @@ Digital Domi, a technology company that is developing a platform for managing ma
 1. Clone the repository or download the source code.
 
 ```bash
-git clone https://github.com/tangobeee/traffic-processor.git
-cd "traffic-processor"
+git clone https://github.com/tangoBeee/digital_domi
+cd "digital_domi"
 ```
 
-2. Run the setup script to install Kafka and start the application.
+2. Install dependencies
 
 ```bash
-./setup
+flutter pub get
 ```
-
-3. Verify that Kafka is running and the application is logging traffic.
 
 ## Usage
 
-1. Modify the `src/main.sh` script to customize logging behavior or Kafka configuration as needed.
+1. Add your [Google Maps API key](https://console.cloud.google.com/project/_/google/maps-apis/credentials) to `android/app/src/main/AndroidManifest.xml` and `ios/Runner/AppDelegate.swift`.
 
-2. Run the application using the provided start script.
+2. Run the application using the provided command.
 
 ```bash
-./start.sh
+flutter run
 ```
-
-3. Monitor the log file `(traffic.log)` for HTTP traffic logs.
-
-4. Optionally, configure Kafka consumers to process the logged data from the Kafka topic.
 
 ## Configuration
 
-1. Kafka broker details can be configured in `etc/kafka.cfg`.
+1. To customize the map styling, add the `mapId` in `lib/widgets/map_view.dart` (line: 102)
 
-2. Logging behavior and other application settings can be adjusted in `src/main.sh`.
+## Demo
+Watch the [video demo](https://youtu.be/78xYb0ezOLY).
 
 ## Screenshot
 
 <div>
   <img width="200" src="assets/1.webp"/> <img width="200" src="assets/2.webp"/>
 </div>
+
+
 
 
 ## License
