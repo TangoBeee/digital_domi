@@ -99,7 +99,7 @@ class _MapViewState extends State<MapView> {
             zoom: 17.25,
           ),
           markers: _markers,
-          cloudMapId: 'af3e253b431e83e3',
+          cloudMapId: '<CLOUD_MAP_ID>',
           zoomControlsEnabled: false,
           polygons: _polygons,
           onTap: _onTap,
